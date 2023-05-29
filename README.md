@@ -1,6 +1,9 @@
 [Japanese/[English](https://github.com/Kazuhito00/hand-gesture-recognition-using-mediapipe/blob/main/README_EN.md)]
 
----
+> **Note**
+> <br>キーポイント分類について、モデルを集めたリポジトリを作成しました。
+> <br>→ [Kazuhito00/hand-keypoint-classification-model-zoo](https://github.com/Kazuhito00/hand-keypoint-classification-model-zoo)
+
 # hand-gesture-recognition-using-mediapipe
 MediaPipe(Python版)を用いて手の姿勢推定を行い、検出したキーポイントを用いて、<br>簡易なMLPでハンドサインとフィンガージェスチャーを認識するサンプルプログラムです。
 ![mqlrf-s6x16](https://user-images.githubusercontent.com/37477845/102222442-c452cd00-3f26-11eb-93ec-c387c98231be.gif)
@@ -13,11 +16,12 @@ MediaPipe(Python版)を用いて手の姿勢推定を行い、検出したキー
 * フィンガージェスチャー認識用学習データ、および、学習用ノートブック
 
 # Requirements
-* mediapipe 0.8.1
-* OpenCV 3.4.2 or Later
-* Tensorflow 2.3.0 or Later<br>tf-nightly 2.5.0.dev or later (LSTMモデルのTFLiteを作成する場合のみ)
-* scikit-learn 0.23.2 or Later (学習時に混同行列を表示したい場合のみ)
-* matplotlib 3.3.2 or Later (学習時に混同行列を表示したい場合のみ)
+* mediapipe 0.8.4
+* OpenCV 4.6.0.66 or Later
+* Tensorflow 2.9.0 or Later
+* protobuf <3.20,>=3.9.2
+* scikit-learn 1.0.2 or Later (学習時に混同行列を表示したい場合のみ)
+* matplotlib 3.5.1 or Later (学習時に混同行列を表示したい場合のみ)
 
 # Demo
 Webカメラを使ったデモの実行方法は以下です。
